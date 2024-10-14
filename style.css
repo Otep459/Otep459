@@ -1,0 +1,109 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'opensans';
+    background-color: #f2f2f2;
+}
+body{
+    background-image: url(pic.jpg); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat/center;
+}
+.header {
+    color: white;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.605);
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    height: 100px;
+   
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left:35%;
+    transform: translate(-50%, -50%);
+    text-align:left;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 15%;
+}
+
+.footer .logo img{
+   height: 200px;
+    margin-right: 10px;
+}
+
+.footer .social-icons img {
+    width: 30px;
+    padding-right: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
