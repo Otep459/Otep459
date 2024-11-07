@@ -8,30 +8,179 @@
    
 </head>
 <body>
-    <section class="home">
+    <section id="home" class="home">
     <div class="header">
         <div class="nav">
             <a href="#home">Home</a>
             <a href="#amenities">Amenities</a>
             <a href="#attractions">Attractions</a>
-           <a href=""><img src="ST.ANA.png" alt="LOGO"></a>
-            <a href="#rooms">Rooms</a>
-            <a href="#contact">Contact Us</a>
-            <a href="#about">About Us</a>
+           <a href="#about"><img src="ST.ANA.png" alt="LOGO"></a>
+            <a href="#rooms.html">Rooms</a>
+            <a href="#contact.html">Contact Us</a>
+            <a id="about us" href="#about">About Us</a>
         </div>
         <div class="content">
             <h1>St. Ana Farm Resort</h1>
             <p>It is a beautiful place for holidays and even vacations for those who want to visit the resort, to relax and to have fun. It has a relaxing garden, the beautiful swimming pool for adults and kids.</p>
-            <a href="#learn-more" class="btn">Learn More</a>
+            <a href="#about" class="btn">Learn More</a>
         </div>
     </div>
 </section>
-
+<section id="amenities" class="amenities-section">
+    <h2>Amenities</h2>
+    <div class="amenities-container">
+        <!-- Amenity Item 1 -->
+        <div class="amenity-item">
+            <img src="pool1.jpg" alt="Swimming Pool">
+            <h3>Swimming Pool</h3>
+            <p>Our resort features a beautiful swimming pool suitable for both adults and children, perfect for relaxation and fun.</p>
+        </div>
+        <!-- Amenity Item 2 -->
+        <div class="amenity-item">
+            <img src="front2.jpg" alt="Garden">
+            <h3>Garden</h3>
+            <p>Enjoy the lush green garden, a serene space ideal for a leisurely stroll or a peaceful escape surrounded by nature.</p>
+        </div>
+        <!-- Amenity Item 3 -->
+        <div class="amenity-item">
+            <img src="hq720.jpg" alt="Relaxation Area">
+            <h3>Relaxation Area</h3>
+            <p>Relax and unwind in our dedicated relaxation area with comfortable seating and a calming atmosphere.</p>
+        </div>
+    </div>
+</section>
+<section id="attractions" class="attractions-section">
+    <h2>Attractions</h2>
+    <div class="attractions-container">
+        <!-- Attraction Item 1 -->
+        <div class="attraction-item">
+            <img src="waterfall.jpg" alt="Nearby Waterfall">
+            <h3>Nearby Waterfall</h3>
+            <p>Explore the stunning waterfall located just a short hike from the resort, perfect for nature lovers and adventure seekers.</p>
+        </div>
+        <!-- Attraction Item 2 -->
+        <div class="attraction-item">
+            <img src="local_village.jpg" alt="Local Village">
+            <h3>Local Village Tour</h3>
+            <p>Visit the local village to experience traditional culture, crafts, and cuisine, offering a glimpse into the local lifestyle.</p>
+        </div>
+        <!-- Attraction Item 3 -->
+        <div class="attraction-item">
+            <img src="beach.jpg" alt="Sandy Beach">
+            <h3>Sandy Beach</h3>
+            <p>Relax at a nearby sandy beach, where you can enjoy swimming, sunbathing, and beachside picnics with family and friends.</p>
+        </div>
+    </div>
+</section>
 <section>
         <div>
+            <section id="rooms" class="rooms-section">
+                <h2>Our Rooms</h2>
+                <div class="rooms-container">
+                    <!-- Room Item 1 -->
+                    <div class="room-item">
+                        <img src="deluxe_room.jpg" alt="Deluxe Room">
+                        <h3>Deluxe Room</h3>
+                        <p>Enjoy a luxurious stay in our Deluxe Room, featuring a king-sized bed, private balcony, and a stunning view of the garden.</p>
+                        <ul class="room-amenities">
+                            <li>King-sized bed</li>
+                            <li>Private balcony</li>
+                            <li>Garden view</li>
+                            <li>Complimentary breakfast</li>
+                        </ul>
+                    </div>
+                    <!-- Room Item 2 -->
+                    <div class="room-item">
+                        <img src="family_suite.jpg" alt="Family Suite">
+                        <h3>Family Suite</h3>
+                        <p>Perfect for families, our spacious Family Suite includes two bedrooms, a living area, and a kitchenette for convenience.</p>
+                        <ul class="room-amenities">
+                            <li>Two bedrooms</li>
+                            <li>Living area</li>
+                            <li>Kitchenette</li>
+                            <li>Complimentary breakfast</li>
+                        </ul>
+                    </div>
+                    <!-- Room Item 3 -->
+                    <div class="room-item">
+                        <img src="standard_room.jpg" alt="Standard Room">
+                        <h3>Standard Room</h3>
+                        <p>Our Standard Room is ideal for solo travelers or couples, offering a comfortable stay with all essential amenities.</p>
+                        <ul class="room-amenities">
+                            <li>Queen-sized bed</li>
+                            <li>Air conditioning</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Complimentary breakfast</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <div class="contact-container">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h3>Get in Touch</h3>
+                        <form action="submit_form.php" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
             
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+            
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+            
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><strong>Address:</strong> 123 Resort Lane, Paradise Island</p>
+                        <p><strong>Phone:</strong> (123) 456-7890</p>
+                        <p><strong>Email:</strong> info@stanafarmresort.com</p>
+                        <div class="social-media">
+                            <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+                            <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+                            <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
+</section>
+<section id="about" class="about-section">
+    <h2>About Us</h2>
+    <div class="about-container">
+        <!-- About Image -->
+        <div class="about-image">
+            <img src="resort_about.jpg" alt="About St. Ana Farm Resort">
+        </div>
+        
+        <!-- About Text -->
+        <div class="about-text">
+            <h3>Welcome to St. Ana Farm Resort</h3>
+            <p>St. Ana Farm Resort is a sanctuary nestled in nature, offering a perfect escape from the hustle and bustle of city life. Our resort is dedicated to providing a peaceful and enjoyable experience for every guest, with lush gardens, beautiful swimming pools, and serene relaxation areas.</p>
+            
+            <h4>Our Mission</h4>
+            <p>To create a memorable and relaxing retreat for all our guests by offering high-quality amenities, friendly service, and a natural environment where everyone can unwind.</p>
+            
+            <h4>Our Vision</h4>
+            <p>To be a top destination for families, couples, and solo travelers seeking tranquility, natural beauty, and a rejuvenating experience.</p>
+            
+            <h4>Why Choose Us?</h4>
+            <ul>
+                <li>Serene and picturesque location</li>
+                <li>Exceptional guest services</li>
+                <li>Family-friendly amenities</li>
+                <li>Close proximity to local attractions</li>
+                <li>Commitment to sustainability and nature</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="foot">

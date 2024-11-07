@@ -5,8 +5,8 @@ body, html {
     font-family: 'opensans';
     background-color: #f2f2f2;
 }
-body{
-    background-image: url(pic.jpg); /* Replace with your image path */
+.home{
+    background-image: url(pic.jpg); 
     background-size: cover;
     background-repeat: no-repeat/center;
 }
@@ -19,6 +19,7 @@ body{
 }
 
 .nav {
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,7 +51,7 @@ body{
     top: 50%;
     left:35%;
     transform: translate(-50%, -50%);
-    text-align:left;
+    text-align: left;
 }
 
 .content h1 {
@@ -76,6 +77,323 @@ body{
     background-color: #ddd;
     font-weight: bold;
 }
+.amenities-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.amenities-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.amenities-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.amenity-item {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.amenity-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.amenity-item h3 {
+    font-size: 24px;
+    margin: 16px 16px 8px;
+    color: #333;
+}
+
+.amenity-item p {
+    font-size: 16px;
+    margin: 0 16px 16px;
+    color: #666;
+}
+.attractions-section {
+    padding: 40px 20px;
+    background-color: #eef2f5;
+    text-align: center;
+}
+
+.attractions-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.attractions-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.attraction-item {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.attraction-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction-item h3 {
+    font-size: 24px;
+    margin: 16px 16px 8px;
+    color: #333;
+}
+
+.attraction-item p {
+    font-size: 16px;
+    margin: 0 16px 16px;
+    color: #666;
+}
+.rooms-section {
+    padding: 40px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.rooms-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rooms-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.room-item {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.room-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-item h3 {
+    font-size: 24px;
+    margin: 16px 16px 8px;
+    color: #333;
+}
+
+.room-item p {
+    font-size: 16px;
+    margin: 0 16px 8px;
+    color: #666;
+}
+
+.room-amenities {
+    list-style-type: none;
+    padding: 0 16px 16px;
+    color: #666;
+}
+
+.room-amenities li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-form,
+.contact-info {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.contact-form h3,
+.contact-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-link:hover {
+    color: #555;
+}
+
+.about-section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.about-text h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text h4 {
+    font-size: 20px;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+.about-text ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     display: flex;
@@ -83,10 +401,10 @@ body{
     align-items: center;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
-    height: 15%;
+    padding: 5px;
+    margin-top: 100px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 .footer .logo img{
