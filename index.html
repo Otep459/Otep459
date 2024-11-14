@@ -1,24 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. Ana Farm Resort</title>
    
 </head>
 <body>
-    <section id="home" class="home">
+    <header>
     <div class="header">
-        <div class="nav">
-            <a href="#home">Home</a>
+        <nav class="nav">
+            <a class="active" href="#home">Home</a>
             <a href="#amenities">Amenities</a>
-            <a href="#attractions">Attractions</a>
-           <a href="#about"><img src="st.ana.png" alt="LOGO"></a>
             <a href="#rooms">Rooms</a>
+            <a href="#about"><img src="st.ana.png" alt="LOGO"></a>
+           
             <a href="#contact">Contact Us</a>
             <a id="about us" href="#about">About Us</a>
+            <a href="#booking">Booking</a>
+        </nav>
+            <div class="icons">
+                <i class="fas fa-bars" id="menu-bars"></i>
+            </div>
         </div>
+        
+</header>
+    <section id="home" class="home">
+    
         <div class="content">
             <h1>St. Ana Farm Resort</h1>
             <p>It is a beautiful place for holidays and even vacations for those who want to visit the resort, to relax and to have fun. It has a relaxing garden, the beautiful swimming pool for adults and kids.</p>
@@ -26,6 +37,7 @@
         </div>
     </div>
 </section>
+
 <section id="amenities" class="amenities-section">
     <h2>Amenities</h2>
     <div class="amenities-container">
@@ -37,7 +49,7 @@
         </div>
         <!-- Amenity Item 2 -->
         <div class="amenity-item">
-            <img src="front2.jpg" alt="Garden">
+            <img src="attraction2.jpg" alt="Garden">
             <h3>Garden</h3>
             <p>Enjoy the lush green garden, a serene space ideal for a leisurely stroll or a peaceful escape surrounded by nature.</p>
         </div>
@@ -49,53 +61,21 @@
         </div>
     </div>
 </section>
-<section id="attractions" class="attractions-section">
-    <h2>Attractions</h2>
-    <div class="attractions-container">
-        <!-- Attraction Item 1 -->
-        <div class="attraction-item">
-            <img src="waterfall.jpg" alt="Nearby Waterfall">
-            <h3>Nearby Waterfall</h3>
-            <p>Explore the stunning waterfall located just a short hike from the resort, perfect for nature lovers and adventure seekers.</p>
-        </div>
-        <!-- Attraction Item 2 -->
-        <div class="attraction-item">
-            <img src="local_village.jpg" alt="Local Village">
-            <h3>Local Village Tour</h3>
-            <p>Visit the local village to experience traditional culture, crafts, and cuisine, offering a glimpse into the local lifestyle.</p>
-        </div>
-        <!-- Attraction Item 3 -->
-        <div class="attraction-item">
-            <img src="beach.jpg" alt="Sandy Beach">
-            <h3>Sandy Beach</h3>
-            <p>Relax at a nearby sandy beach, where you can enjoy swimming, sunbathing, and beachside picnics with family and friends.</p>
-        </div>
-    </div>
-</section>
-<section>
+
+
         <div>
             <section id="rooms" class="rooms-section">
                 <h2>Our Rooms</h2>
                 <div class="rooms-container">
                     <!-- Room Item 1 -->
-                    <div class="room-item">
-                        <img src="deluxe_room.jpg" alt="Deluxe Room">
-                        <h3>Deluxe Room</h3>
-                        <p>Enjoy a luxurious stay in our Deluxe Room, featuring a king-sized bed, private balcony, and a stunning view of the garden.</p>
-                        <ul class="room-amenities">
-                            <li>King-sized bed</li>
-                            <li>Private balcony</li>
-                            <li>Garden view</li>
-                            <li>Complimentary breakfast</li>
-                        </ul>
-                    </div>
+                   
                     <!-- Room Item 2 -->
                     <div class="room-item">
-                        <img src="family_suite.jpg" alt="Family Suite">
+                        <img src="famroom.jpg" alt="Family Suite">
                         <h3>Family Suite</h3>
                         <p>Perfect for families, our spacious Family Suite includes two bedrooms, a living area, and a kitchenette for convenience.</p>
                         <ul class="room-amenities">
-                            <li>Two bedrooms</li>
+                            <li>family bedrooms</li>
                             <li>Living area</li>
                             <li>Kitchenette</li>
                             <li>Complimentary breakfast</li>
@@ -103,7 +83,7 @@
                     </div>
                     <!-- Room Item 3 -->
                     <div class="room-item">
-                        <img src="standard_room.jpg" alt="Standard Room">
+                        <img src="room2.jpg" alt="Standard Room">
                         <h3>Standard Room</h3>
                         <p>Our Standard Room is ideal for solo travelers or couples, offering a comfortable stay with all essential amenities.</p>
                         <ul class="room-amenities">
@@ -115,13 +95,13 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="contact-section">
+ <section id="contact" class="contact-section">
                 <h2>Contact Us</h2>
                 <div class="contact-container">
                     <!-- Contact Form -->
                     <div class="contact-form">
                         <h3>Get in Touch</h3>
-                        <form action="submit_form.php" method="POST">
+                        <form action="https://formspree.io/f/meqykpkj" method="POST">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
             
@@ -129,7 +109,7 @@
                             <input type="email" id="email" name="email" required>
             
                             <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" name="message" rows="6" required></textarea>
             
                             <button type="submit">Send Message</button>
                         </form>
@@ -151,17 +131,18 @@
             </section>
         </div>
 
-</section>
+
 <section id="about" class="about-section">
     <h2>About Us</h2>
     <div class="about-container">
         <!-- About Image -->
-        <div class="about-image">
-            <img src="resort_about.jpg" alt="About St. Ana Farm Resort">
+        <div class="about">
+            <img src="attraction.jpg" alt="About St. Ana Farm Resort">
         </div>
         
         <!-- About Text -->
-        <div class="about-text">
+        <div class="about">
+            <div class="text">
             <h3>Welcome to St. Ana Farm Resort</h3>
             <p>St. Ana Farm Resort is a sanctuary nestled in nature, offering a perfect escape from the hustle and bustle of city life. Our resort is dedicated to providing a peaceful and enjoyable experience for every guest, with lush gardens, beautiful swimming pools, and serene relaxation areas.</p>
             
@@ -183,6 +164,71 @@
     </div>
 </section>
 
+<section class="booking" id="booking">
+    <div class="booking-container">
+        <h2>Book Your Appointment</h2>
+        <div class="alert" id="error-message">Please fill in all fields.</div>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="service">Select Service:</label>
+                <select id="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Consultation">Consultation</option>
+                    <option value="Service A">Service A</option>
+                    <option value="Service B">Service B</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Select Time:</label>
+                <select id="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="09:00 AM">09:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="01:00 PM">01:00 PM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="03:00 PM">03:00 PM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required placeholder="Your Email">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required placeholder="Your Phone Number">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message/Notes (Optional):</label>
+                <textarea id="message" placeholder="Any special requests or notes"></textarea>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+
+</section>
+
+
+
+
+
 <section class="foot">
     <div class="footer">
      <div class="logo"><a href=""><img src="st.ana.png" alt="LOGO"></a></div>
@@ -196,5 +242,17 @@
       
     </div>
 </section>
+
+
+<div id="progress">
+        <span id="progress-value">
+            &#8593;
+        </span>
+</div>
+
+<script src="script.js"></script>
+
+
+
 </body>
 </html>
