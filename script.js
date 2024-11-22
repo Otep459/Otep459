@@ -23,3 +23,31 @@ let calcScrollValue = () =>{
 
     window.onscroll = calcScrollValue;
     window.onload = calcScrollValue;
+    ;
+    ;
+
+    // JavaScript for the Terms and Conditions Popup
+document.addEventListener("DOMContentLoaded", () => {
+    const openPopup = document.getElementById("open-terms");
+    const closePopup = document.getElementById("close-terms");
+    const popupOverlay = document.getElementById("terms-popup");
+  
+    // Open popup
+    openPopup.addEventListener("click", (e) => {
+      e.preventDefault();
+      popupOverlay.classList.add("active");
+    });
+  
+    // Close popup
+    closePopup.addEventListener("click", () => {
+      popupOverlay.classList.remove("active");
+    });
+  
+    // Close when clicking outside the popup content
+    popupOverlay.addEventListener("click", (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.classList.remove("active");
+      }
+    });
+  });
+  
