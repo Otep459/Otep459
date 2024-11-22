@@ -52,6 +52,7 @@ a.active,
 a:hover {
   background: #3b9041;
   transition: .5s;
+  z-index: 10000;
 }
 
 .checkbtn {
@@ -86,17 +87,17 @@ a:hover {
 
   label.logo {
     font-size: 22px;
-  }
+    }
 
   ul {
     position: fixed;
-    width: 100%;
     height: 110vh;
-    background: #2c3e50;
+    background: #53a160;
     top: 100px;
     left: -100%;
     text-align: center;
     transition: all .5s;
+    z-index: 1000;
   }
 
   nav ul li {
@@ -112,7 +113,7 @@ a:hover {
   a:hover,
   a.active {
     background: none;
-    color: #0082e6;
+    color: #ffffff;
   }
 
   #check:checked~ul {
