@@ -570,6 +570,14 @@ button:hover {
   padding-left: 20px;
   color: #666;
 }
+@media (max-width: 890px) {
+  .about img{
+    display: none;
+ 
+  }
+}
+
+
 
 .text ul li {
   font-size: 16px;
