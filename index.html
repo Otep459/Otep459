@@ -1,258 +1,254 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>St. Ana Farm Resort</title>
-   
+  <meta charset="utf-8">
+  <title>Responsive Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
-    <header>
-    <div class="header">
-        <nav class="nav">
-            <a class="active" href="#home">Home</a>
-            <a href="#amenities">Amenities</a>
-            <a href="#rooms">Rooms</a>
-            <a href="#about"><img src="st.ana.png" alt="LOGO"></a>
-           
-            <a href="#contact">Contact Us</a>
-            <a id="about us" href="#about">About Us</a>
-            <a href="#booking">Booking</a>
-        </nav>
-            <div class="icons">
-                <i class="fas fa-bars" id="menu-bars"></i>
-            </div>
-        </div>
-        
-</header>
-    <section id="home" class="home">
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Site logo -->
+    <label class="logo"><img src="Staana.png" alt=""></label>
+
+    <!-- Navigation links -->
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#rooms">Rooms</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section for image -->
+  <section id="home" class="home">
     
-        <div class="content">
-            <h1>St. Ana Farm Resort</h1>
-            <p>It is a beautiful place for holidays and even vacations for those who want to visit the resort, to relax and to have fun. It has a relaxing garden, the beautiful swimming pool for adults and kids.</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
+    <div class="content">
+        <h1>St. Ana Farm Resort</h1>
+        <p>It is a beautiful place for holidays and even vacations for those who want to visit the resort, to relax and to have fun. It has a relaxing garden, the beautiful swimming pool for adults and kids.</p>
+        <a href="#about" class="btn">Learn More</a>
     </div>
+</div>
 </section>
 
 <section id="amenities" class="amenities-section">
-    <h2>Amenities</h2>
-    <div class="amenities-container">
-        <!-- Amenity Item 1 -->
-        <div class="amenity-item">
-            <img src="pool1.jpg" alt="Swimming Pool">
-            <h3>Swimming Pool</h3>
-            <p>Our resort features a beautiful swimming pool suitable for both adults and children, perfect for relaxation and fun.</p>
-        </div>
-        <!-- Amenity Item 2 -->
-        <div class="amenity-item">
-            <img src="attraction2.jpg" alt="Garden">
-            <h3>Garden</h3>
-            <p>Enjoy the lush green garden, a serene space ideal for a leisurely stroll or a peaceful escape surrounded by nature.</p>
-        </div>
-        <!-- Amenity Item 3 -->
-        <div class="amenity-item">
-            <img src="hq720.jpg" alt="Relaxation Area">
-            <h3>Relaxation Area</h3>
-            <p>Relax and unwind in our dedicated relaxation area with comfortable seating and a calming atmosphere.</p>
-        </div>
+<h2>Amenities</h2>
+<div class="amenities-container">
+    <!-- Amenity Item 1 -->
+    <div class="amenity-item">
+        <img src="pool1.jpg" alt="Swimming Pool">
+        <h3>Swimming Pool</h3>
+        <p>Our resort features a beautiful swimming pool suitable for both adults and children, perfect for relaxation and fun.</p>
     </div>
+    <!-- Amenity Item 2 -->
+    <div class="amenity-item">
+        <img src="attraction2.jpg" alt="Garden">
+        <h3>Garden</h3>
+        <p>Enjoy the lush green garden, a serene space ideal for a leisurely stroll or a peaceful escape surrounded by nature.</p>
+    </div>
+    <!-- Amenity Item 3 -->
+    <div class="amenity-item">
+        <img src="hq720.jpg" alt="Relaxation Area">
+        <h3>Relaxation Area</h3>
+        <p>Relax and unwind in our dedicated relaxation area with comfortable seating and a calming atmosphere.</p>
+    </div>
+</div>
 </section>
 
 
-        <div>
-            <section id="rooms" class="rooms-section">
-                <h2>Our Rooms</h2>
-                <div class="rooms-container">
-                    <!-- Room Item 1 -->
-                   
-                    <!-- Room Item 2 -->
-                    <div class="room-item">
-                        <img src="famroom.jpg" alt="Family Suite">
-                        <h3>Family Suite</h3>
-                        <p>Perfect for families, our spacious Family Suite includes two bedrooms, a living area, and a kitchenette for convenience.</p>
-                        <ul class="room-amenities">
-                            <li>family bedrooms</li>
-                            <li>Living area</li>
-                            <li>Kitchenette</li>
-                            <li>Complimentary breakfast</li>
-                        </ul>
-                    </div>
-                    <!-- Room Item 3 -->
-                    <div class="room-item">
-                        <img src="room2.jpg" alt="Standard Room">
-                        <h3>Standard Room</h3>
-                        <p>Our Standard Room is ideal for solo travelers or couples, offering a comfortable stay with all essential amenities.</p>
-                        <ul class="room-amenities">
-                            <li>Queen-sized bed</li>
-                            <li>Air conditioning</li>
-                            <li>Free Wi-Fi</li>
-                            <li>Complimentary breakfast</li>
-                        </ul>
+    <div>
+        <section id="rooms" class="rooms-section">
+            <h2>Our Rooms</h2>
+            <div class="rooms-container">
+                <!-- Room Item 1 -->
+               
+                <!-- Room Item 2 -->
+                <div class="room-item">
+                    <img src="famroom.jpg" alt="Family Suite">
+                    <h3>Family Suite</h3>
+                    <p>Perfect for families, our spacious Family Suite includes two bedrooms, a living area, and a kitchenette for convenience.</p>
+                    <ul class="room-amenities">
+                        <li>family bedrooms</li>
+                        <li>Living area</li>
+                        <li>Kitchenette</li>
+                        <li>Complimentary breakfast</li>
+                    </ul>
+                </div>
+                <!-- Room Item 3 -->
+                <div class="room-item">
+                    <img src="room2.jpg" alt="Standard Room">
+                    <h3>Standard Room</h3>
+                    <p>Our Standard Room is ideal for solo travelers or couples, offering a comfortable stay with all essential amenities.</p>
+                    <ul class="room-amenities">
+                        <li>Queen-sized bed</li>
+                        <li>Air conditioning</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Complimentary breakfast</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+<section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form action="submit_form.php" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+        
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Address:</strong> Ilaya-Ivisan, Ivisan, Capiz</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@stanafarmresort.com</p>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
+                        <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
                     </div>
                 </div>
-            </section>
- <section id="contact" class="contact-section">
-                <h2>Contact Us</h2>
-                <div class="contact-container">
-                    <!-- Contact Form -->
-                    <div class="contact-form">
-                        <h3>Get in Touch</h3>
-                        <form action="https://formspree.io/f/meqykpkj" method="POST">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-            
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-            
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-            
-                            <button type="submit">Send Message</button>
-                        </form>
-                    </div>
-            
-                    <!-- Contact Info -->
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <p><strong>Address:</strong> Ilaya-Ivisan, Ivisan, Capiz</p>
-                        <p><strong>Phone:</strong> (123) 456-7890</p>
-                        <p><strong>Email:</strong> info@stanafarmresort.com</p>
-                        <div class="social-media">
-                            <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
-                            <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
-                            <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 
 
 <section id="about" class="about-section">
-    <h2>About Us</h2>
-    <div class="about-container">
-        <!-- About Image -->
-        <div class="about">
-            <img src="attraction.jpg" alt="About St. Ana Farm Resort">
-        </div>
-        
-        <!-- About Text -->
-        <div class="about">
-            <div class="text">
-            <h3>Welcome to St. Ana Farm Resort</h3>
-            <p>St. Ana Farm Resort is a sanctuary nestled in nature, offering a perfect escape from the hustle and bustle of city life. Our resort is dedicated to providing a peaceful and enjoyable experience for every guest, with lush gardens, beautiful swimming pools, and serene relaxation areas.</p>
-            
-            <h4>Our Mission</h4>
-            <p>To create a memorable and relaxing retreat for all our guests by offering high-quality amenities, friendly service, and a natural environment where everyone can unwind.</p>
-            
-            <h4>Our Vision</h4>
-            <p>To be a top destination for families, couples, and solo travelers seeking tranquility, natural beauty, and a rejuvenating experience.</p>
-            
-            <h4>Why Choose Us?</h4>
-            <ul>
-                <li>Serene and picturesque location</li>
-                <li>Exceptional guest services</li>
-                <li>Family-friendly amenities</li>
-                <li>Close proximity to local attractions</li>
-                <li>Commitment to sustainability and nature</li>
-            </ul>
-        </div>
+<h2>About Us</h2>
+<div class="about-container">
+    <!-- About Image -->
+    <div class="about">
+        <img src="attraction.jpg" alt="About St. Ana Farm Resort">
     </div>
+    
+    <!-- About Text -->
+    <div class="about">
+        <div class="text">
+        <h3>Welcome to St. Ana Farm Resort</h3>
+        <p>St. Ana Farm Resort is a sanctuary nestled in nature, offering a perfect escape from the hustle and bustle of city life. Our resort is dedicated to providing a peaceful and enjoyable experience for every guest, with lush gardens, beautiful swimming pools, and serene relaxation areas.</p>
+        
+        <h4>Our Mission</h4>
+        <p>To create a memorable and relaxing retreat for all our guests by offering high-quality amenities, friendly service, and a natural environment where everyone can unwind.</p>
+        
+        <h4>Our Vision</h4>
+        <p>To be a top destination for families, couples, and solo travelers seeking tranquility, natural beauty, and a rejuvenating experience.</p>
+        
+        <h4>Why Choose Us?</h4>
+        <ul>
+            <li>Serene and picturesque location</li>
+            <li>Exceptional guest services</li>
+            <li>Family-friendly amenities</li>
+            <li>Close proximity to local attractions</li>
+            <li>Commitment to sustainability and nature</li>
+        </ul>
+    </div>
+</div>
 </section>
 
 <section class="booking" id="booking">
-    <div class="booking-container">
-        <h2>Book Your Appointment</h2>
-        <div class="alert" id="error-message">Please fill in all fields.</div>
-        <form id="bookingForm">
-            <div class="form-group">
-                <label for="service">Select Service:</label>
-                <select id="service" required>
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="Consultation">Consultation</option>
-                    <option value="Service A">Service A</option>
-                    <option value="Service B">Service B</option>
-                </select>
-            </div>
+<div class="booking-container">
+    <h2>Book Your Appointment</h2>
+    <div class="alert" id="error-message">Please fill in all fields.</div>
+    <form id="bookingForm">
+        <div class="form-group">
+            <label for="service">Select Service:</label>
+            <select id="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Service A">Service A</option>
+                <option value="Service B">Service B</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="date">Select Date:</label>
-                <input type="date" id="date" required>
-            </div>
+        <div class="form-group">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+        </div>
 
-            <div class="form-group">
-                <label for="time">Select Time:</label>
-                <select id="time" required>
-                    <option value="" disabled selected>Select a time</option>
-                    <option value="09:00 AM">09:00 AM</option>
-                    <option value="10:00 AM">10:00 AM</option>
-                    <option value="11:00 AM">11:00 AM</option>
-                    <option value="12:00 PM">12:00 PM</option>
-                    <option value="01:00 PM">01:00 PM</option>
-                    <option value="02:00 PM">02:00 PM</option>
-                    <option value="03:00 PM">03:00 PM</option>
-                </select>
-            </div>
+        <div class="form-group">
+            <label for="time">Select Time:</label>
+            <select id="time" required>
+                <option value="" disabled selected>Select a time</option>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="01:00 PM">01:00 PM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="03:00 PM">03:00 PM</option>
+            </select>
+        </div>
 
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" required placeholder="Your Name">
-            </div>
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required placeholder="Your Name">
+        </div>
 
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" required placeholder="Your Email">
-            </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required placeholder="Your Email">
+        </div>
 
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" required placeholder="Your Phone Number">
-            </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required placeholder="Your Phone Number">
+        </div>
 
-            <div class="form-group">
-                <label for="message">Message/Notes (Optional):</label>
-                <textarea id="message" placeholder="Any special requests or notes"></textarea>
-            </div>
+        <div class="form-group">
+            <label for="message">Message/Notes (Optional):</label>
+            <textarea id="message" placeholder="Any special requests or notes"></textarea>
+        </div>
 
-            <button type="submit">Book Now</button>
-        </form>
-    </div>
-
-
+        <button type="submit">Book Now</button>
+    </form>
+</div>
 </section>
-
-
-
-
-
 <section class="foot">
-    <div class="footer">
-     <div class="logo"><a href=""><img src="st.ana.png" alt="LOGO"></a></div>
-        <span>COPYRIGHT © 2024 ST. ANA FARM RESORT</span>
-        <a href="#terms">Terms and Conditions</a>
-        <div class="social-icons">
-            <a href="#facebook"><img src="communication.png" alt="Facebook"></a>
-            <a href="#instagram"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#twitter"><img src="twitter.png" alt="Twitter"></a>
-        </div> 
-      
-    </div>
+<div class="footer">
+ <div class="logo"><a href=""><img src="Staana.png" alt="LOGO"></a></div>
+    <span>COPYRIGHT © 2024 ST. ANA FARM RESORT</span>
+    <a href="#terms">Terms and Conditions</a>
+    <div class="social-icons">
+        <a href="#facebook"><img src="communication.png" alt="Facebook"></a>
+        <a href="#instagram"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#twitter"><img src="twitter.png" alt="Twitter"></a>
+    </div> 
+  
+</div>
 </section>
 
 
 <div id="progress">
-        <span id="progress-value">
-            &#8593;
-        </span>
+    <span id="progress-value">
+        &#8593;
+    </span>
 </div>
-
 <script src="script.js"></script>
-
-
-
 </body>
+
 </html>
