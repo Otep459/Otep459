@@ -28,7 +28,7 @@
       <li><a class="active" href="#">Home</a></li>
       <li><a href="#amenities">Amenities</a></li>
       <li><a href="#rooms">Rooms</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact Us</a></li>
       <li><a href="#booking">Booking</a></li>
     </ul>
   </nav>
@@ -45,17 +45,6 @@
         </p>
         
         <a href="#booking" class="cta-button">Plan Your Perfect Stay</a>
-        <div class="features">
-        <ul>
-            <li>✅ Lush tropical gardens</li>
-          </ul>
-      <ul>
-        <li>✅ Relaxing swimming pool for adults and kids</li>
-      </ul>
-  <ul>
-    <li>✅ Perfect for family holidays and romantic getaways</li>
-  </ul>
-</div>
 </div>
      
 </section>
@@ -65,9 +54,11 @@
 <div class="amenities-container">
     <!-- Amenity Item 1 -->
     <div class="amenity-item">
+      <a href="pools.html">
         <img src="pool1.jpg" alt="Swimming Pool">
         <h3>Swimming Pool</h3>
         <p>Our resort features a beautiful swimming pool suitable for both adults and children, perfect for relaxation and fun.</p>
+      </a>
     </div>
     <!-- Amenity Item 2 -->
     <div class="amenity-item">
@@ -93,72 +84,36 @@
                
                 <!-- Room Item 2 -->
                 <div class="room-item">
-                    <img src="famroom.jpg" alt="Family Suite">
-                    <h3>Family Suite</h3>
-                    <p>Perfect for families, our spacious Family Suite includes two bedrooms, a living area, and a kitchenette for convenience.</p>
-                    <ul class="room-amenities">
-                      
+                   
+                   <div class="item">
+                   <div> <img src="famroom.jpg" alt="Family Suite"></div>
+                     <div class="text">
+                      <h3>Family Suite</h3>
+                      <p class="room-description">Perfect for families, elegant room with air conditioning, and a queen-size bed.</p>
+                     <p class="room-rate">Rate: PHP 5,000 per night</p></div>
+                    <ul class="room-amenities">       
                     </ul>
+                  </div>
                 </div>
                 <!-- Room Item 3 -->
                 <div class="room-item">
+                  
+                  <div class="item2">
                     <img src="room2.jpg" alt="Standard Room">
-                    <h3>Standard Room</h3>
-                    <p>Our Standard Room is ideal for solo travelers or couples, offering a comfortable stay with all essential amenities.</p>
+                    <div class="text">
+                      <h3>Standard Room</h3>
+                      <p class="room-description">Cozy room ideal for solo travelers, equipped with a single bed and free Wi-Fi.</p>
+                    <p class="room-rate">Rate: PHP 1,800 per night</p></div>
                     <ul class="room-amenities">
-                       
                     </ul>
+                  </div>
                 </div>
             </div>
         </section>
-<section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <div class="contact-containers">
-            <div class="contact-container">
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h3>Get in Touch</h3>
-                    <form action="submit_form.php" method="POST">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-        
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-        
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-        
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-        
-                <!-- Contact Info -->
-                
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><strong>Address:</strong> Ilaya-Ivisan, Ivisan, Capiz</p>
-                    <p><strong>Phone:</strong> (123) 456-7890</p>
-                    <p>``<strong>Email:</strong> info@stanafarmresort.com</p>
-                    <img src="map.png" alt="">
-                    <div class="social-media">
-                        <a href="https://facebook.com" target="_blank" class="social-link">Facebook</a>
-                        <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
-                        <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
-                    </div>
-                </div>
-            </div>
-          </div>
-            <div class="contact-containers">
-            <div class="maps">
-             
-            </div>
-            </div>
-        </section>
-    </div>
 
 
-<section id="about" class="about-section">
-<h2>About Us</h2>
+<section id="contact" class="about-section">
+<h2>Contact Us</h2>
 <div class="about-container">
     <!-- About Image -->
     <div class="about">
@@ -167,33 +122,56 @@
     
     <!-- About Text -->
     <div class="about">
-        <div class="text">
-        <h3>Welcome to St. Ana Farm Resort</h3>
-        <p>St. Ana Farm Resort is a sanctuary nestled in nature, offering a perfect escape from the hustle and bustle of city life. Our resort is dedicated to providing a peaceful and enjoyable experience for every guest, with lush gardens, beautiful swimming pools, and serene relaxation areas.</p>
-        
-        <h4>Our Mission</h4>
-        <p>To create a memorable and relaxing retreat for all our guests by offering high-quality amenities, friendly service, and a natural environment where everyone can unwind.</p>
-        
-        <h4>Our Vision</h4>
-        <p>To be a top destination for families, couples, and solo travelers seeking tranquility, natural beauty, and a rejuvenating experience.</p>
-        
-        <h4>Why Choose Us?</h4>
-        <ul>
-            <li>Serene and picturesque location</li>
-            <li>Exceptional guest services</li>
-            <li>Family-friendly amenities</li>
-            <li>Close proximity to local attractions</li>
-            <li>Commitment to sustainability and nature</li>
-        </ul>
+      <div class="contact-containers">
+      <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form">
+              <h3>Get in Touch</h3>
+              <form action="submit_form.php" method="POST">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="6" required></textarea>
+  
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
+  
+          <!-- Contact Info -->
+          
+          <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p><strong>Address:</strong> Ilaya-Ivisan, Ivisan, Capiz</p>
+              <p><strong>Phone:</strong> (123) 456-7890</p>
+              <p><strong>Email:</strong> info@stanafarmresort.com</p>
+              <img src="map.png" alt="">
+              <div class="social-media">
+                  <a href="https://www.facebook.com/MaribertInlandResortCapiz/" target="_blank" class="social-link">Facebook</a>
+                  <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+                  <a href="https://twitter.com" target="_blank" class="social-link">Twitter</a>
+              </div>
+          </div>
+      </div>
     </div>
+      <div class="contact-containers">
+      <div class="maps">
+       
+      </div>
+      </div>
 </div>
 </section>
 
 <section class="booking" id="booking">
 <div class="booking-container">
     <h2>Book Your Appointment</h2>
+    <div class="box">
+    <div class="container">
     <div class="alert" id="error-message">Please fill in all fields.</div>
-    <form id="bookingForm">
+    <form id="bookingForm" action="" method="post">
         <div class="form-group">
             <label for="service">Select Service:</label>
             <select id="service" required>
@@ -244,7 +222,8 @@
             <label for="name">Full Name:</label>
             <input type="text" id="name" required placeholder="Your Name">
         </div>
-
+      </div>
+      <div class="container">
         <div class="form-group">
             <label for="email">Email Address:</label>
             <input type="email" id="email" required placeholder="Your Email">
@@ -262,6 +241,8 @@
 
         <button type="submit">Book Now</button>
     </form>
+  </div>
+</div>
 </div>
 </section>
 <!-- Footer Section -->
@@ -275,7 +256,7 @@
         <a href="#" id="open-terms">Terms and Conditions</a>
       </div>
       <div class="social-icons">
-        <a href="#"><img src="communication.png" alt="Facebook"></a>
+        <a href="https://www.facebook.com/MaribertInlandResortCapiz/"><img src="communication.png" alt="Facebook"></a>
         <a href="#"><img src="instagram.png" alt="Instagram"></a>
         <a href="#"><img src="twitter.png" alt="Twitter"></a>
       </div>
