@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sta. Ana Farm Resort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Site logo -->
+    <label class="logo"><img src="staana1.png" alt=""></label>
+
+    <!-- Navigation links -->
+    <ul>
+      <li><a  href="index.html">Home</a></li>
+      <li><a class="active" href="#amenities">Amenities</a></li>
+ 
+    </ul>
+  </nav>
+
+
+
+  <div class="rooms-container">
+    <!-- Room Item 1 -->
+   
+    <!-- Room Item 2 -->
+    <div class="room-item">
+       
+       <div class="item">
+       <div> <img src="famroom.jpg" alt="Family Suite"></div>
+         <div class="text">
+          <h3>Family Suite</h3>
+          <p class="room-description">Perfect for families, elegant room with air conditioning, and a queen-size bed.</p>
+         <p class="room-rate">Rate: PHP 5,000 per night</p></div>
+        <ul class="room-amenities">       
+        </ul>
+      </div>
+    </div>
+    <!-- Room Item 3 -->
+    <div class="room-item">
+      
+      <div class="item2">
+        <img src="room2.jpg" alt="Standard Room">
+        <div class="text">
+          <h3>Standard Room</h3>
+          <p class="room-description">Cozy room ideal for solo travelers, equipped with a single bed and free Wi-Fi.</p>
+        <p class="room-rate">Rate: PHP 1,800 per night</p></div>
+        <ul class="room-amenities">
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="staana1.png" alt="St. Ana Farm Resort Logo" class="footer-logo">
+      </div>
+      <p>&copy; 2024 Developer Jeric Raval. All Rights Reserved.</p>
+      <div class="footer-right">
+        <a href="#" id="open-terms">Terms and Conditions</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/MaribertInlandResortCapiz/"><img src="communication.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Terms and Conditions Popup -->
+  <div id="terms-popup" class="popup-overlay">
+    <div class="popup-content">
+      <h2>Terms and Conditions</h2>
+      <p>
+        By accessing and using the services of St. Ana Farm Resort, you agree to the following terms:
+      </p>
+      <ul>
+        <li>✔ All bookings are subject to confirmation.</li>
+        <li>✔ Check-in and check-out times must be adhered to.</li>
+        <li>✔ Cancellation policies are in effect as outlined on the website.</li>
+        <li>✔ Guests are responsible for personal belongings.</li>
+        <li>✔ Property damage caused by guests may incur additional charges.</li>
+      </ul>
+      <p>For more details, please contact our management team.</p>
+      <button id="close-terms" class="popup-close">Close</button>
+    </div>
+  </div>
+</body>
+
+</html>
