@@ -20,9 +20,12 @@
 img{
   animation: pop-in 1.0s;
 }
+
+
 html{
   scroll-behavior: smooth;
 }
+
 
 nav {
   background: #f8f8f8;
@@ -31,6 +34,7 @@ nav {
   position:fixed;
   top: 0px;
   z-index: 100;
+  box-shadow: 0px 10px 10px rgb(146, 146, 146);
 }
 
 label.logo img {
@@ -102,7 +106,9 @@ a:hover {
     width: 400px;
     height: 300px;
   }
-  
+.rooms-container .room-item .text .image{
+    width: 400px;
+}
 }
 
 /* Responsive media query code for small screen */
@@ -160,12 +166,9 @@ nav ul{
 
 
 
-.rooms-section {
-    background-color: #f2f2f2;
-    text-align: center;
-  }
+
   
-  .rooms-section h2 {
+  h2 {
     font-size: 32px;
     margin-bottom: 20px;
     color: #333;
@@ -175,8 +178,11 @@ nav ul{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(255, 252, 222);  
-    flex-direction: column-reverse
-  
+    flex-direction: column-reverse;
+    position: relative;
+    top: 80px;
+    left: 30px;
+    width: 100%;
   }
   
   .item{
@@ -195,14 +201,29 @@ nav ul{
   }
   .room-item{
     width: 100%;
-    overflow: hidden;
     cursor: pointer;
-    animation: 150ms ease;
+    overflow: hidden;
     background-color: white;
     margin-bottom: 30px;
     
   }
-  
+  .text .image{
+    width: 600px;
+    height: 400px;
+    margin-right: 60px;
+    margin-top: 20px;
+    position: relative;
+    top: 20PX;
+    left: 100px;
+  }
+  text .image2{
+    width: 400px;
+    height: 400px;
+    margin-right: 60px;
+    margin-top: 20px;
+    position: relative;
+
+  }
   .room-item img {
     width: 750px;
     height: 600px;
@@ -213,18 +234,19 @@ nav ul{
     font-size: 20px;
     margin: 16px 16px 8px;
     color: #333;
+    position: relative;
+    left: 100px;
    
   }
   .room-item .item2 .text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: right;
+    margin-top: 300px;
   }
   .room-item .item .text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: left;
   }
   
@@ -235,7 +257,9 @@ nav ul{
   .room-item .room-rate {
     font-weight: bold;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
+    position: relative;
+    left: 100px;
   }
   
   .room-amenities {

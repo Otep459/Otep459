@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sta. Ana Farm Resort</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <!-- Font Awesome Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Site logo -->
+    <label class="logo"><img src="staana1.png" alt=""></label>
+
+    <!-- Navigation links -->
+    <ul>
+      <li><a  href="index.html">Home</a></li>
+      <li><a class="active" href="#amenities">Amenities</a></li>
+ 
+    </ul>
+  </nav>
+
+
+
+  <div class="rooms-container">
+    <!-- Room Item 1 -->
+   
+    <!-- Room Item 2 -->
+    <div class="room-item">
+       
+       <div class="item">
+       <div> <img src="pool1.jpg" alt="Family Suite"></div>
+         <div class="text">
+            <img src="diving.jpg" class="image" alt="kids pool">
+          <h3>Adults Pool</h3>
+          <p class="room-rate">Day time*(9 am-5pm)
+            Entrance fee = Php.20.00
+            Swimming fee = Php.85.00
+            
+            Night time*(6pm-10pm)
+            Entrance fee = Php.50.00
+            Swimming fee = Php.120.00</p></div>
+          <ul class="room-amenities">
+        <ul class="room-amenities">       
+        </ul>
+      </div>
+    </div>
+    <!-- Room Item 3 -->
+    <div class="room-item">
+      
+      <div class="item2">
+        <img src="kids pool.jpg" alt="Standard Room">
+        <div class="text">
+          <img src="poolkid.jpg" class="image2" alt="kids pool">
+          <h3>Kids pool</h3>
+        <p class="room-rate">Pool's for kids, it is 2 to 3 ft.high floor</p></div>
+        <ul class="room-amenities">
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="staana1.png" alt="St. Ana Farm Resort Logo" class="footer-logo">
+      </div>
+      <p>&copy; 2024 Developer Jeric Raval. All Rights Reserved.</p>
+      <div class="footer-right">
+        <a href="#" id="open-terms">Terms and Conditions</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/MaribertInlandResortCapiz/"><img src="communication.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Terms and Conditions Popup -->
+  <div id="terms-popup" class="popup-overlay">
+    <div class="popup-content">
+      <h2>Terms and Conditions</h2>
+      <p>
+        By accessing and using the services of St. Ana Farm Resort, you agree to the following terms:
+      </p>
+      <ul>
+        <li>✔ All bookings are subject to confirmation.</li>
+        <li>✔ Check-in and check-out times must be adhered to.</li>
+        <li>✔ Cancellation policies are in effect as outlined on the website.</li>
+        <li>✔ Guests are responsible for personal belongings.</li>
+        <li>✔ Property damage caused by guests may incur additional charges.</li>
+      </ul>
+      <p>For more details, please contact our management team.</p>
+      <button id="close-terms" class="popup-close">Close</button>
+    </div>
+  </div>
+
+  <script>
+     // JavaScript for the Terms and Conditions Popup
+document.addEventListener("DOMContentLoaded", () => {
+    const openPopup = document.getElementById("open-terms");
+    const closePopup = document.getElementById("close-terms");
+    const popupOverlay = document.getElementById("terms-popup");
+  
+    // Open popup
+    openPopup.addEventListener("click", (e) => {
+      e.preventDefault();
+      popupOverlay.classList.add("active");
+    });
+  
+    // Close popup
+    closePopup.addEventListener("click", () => {
+      popupOverlay.classList.remove("active");
+    });
+  
+    // Close when clicking outside the popup content
+    popupOverlay.addEventListener("click", (e) => {
+      if (e.target === popupOverlay) {
+        popupOverlay.classList.remove("active");
+      }
+    });
+  });
+  </script>
+</body>
+
+</html>
