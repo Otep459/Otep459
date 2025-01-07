@@ -13,7 +13,6 @@ let calcScrollValue = () =>{
         scrollProgress.style.display = "grid";}
         else {
             scrollProgress.style.display = "none";
-
         }
         scrollProgress.addEventListener("click", () =>{
             document.documentElement.scrollTop = 0;

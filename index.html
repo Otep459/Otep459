@@ -176,81 +176,90 @@
     <h2>Book Your Appointment</h2>
     <div class="box">
        <div class="container">
-     <form 
-    action="https://formspree.io/f/xwppwrvj"
-    method="POST">  
-   
-    <div class="alert" id="error-message">Please fill in all fields.</div>
-
-    <div class="form-group">
-      <label for="service">Select Service:</label>
-      <select id="service" required>
-          <option value="" disabled selected>Select a service</option>
-          <option value="Consultation">Consultation</option>
-          <option value="Service A">Service A</option>
-          <option value="Service B">Service B</option>
-      </select>
-  </div>
+        <form action="https://formspree.io/f/xwppwwyb" method="POST" id="appointment-form">
+          <!-- Error Message -->
+          <div class="alert" id="error-message" style="display: none;">Please fill in all fields.</div>
   
-
-  <div class="form-group">
-      <label for="time">Select Time:</label>
-      <select id="time" required>
-          <option value="" disabled selected>Select a time</option>
-          <option value="09:00 AM">01:00 AM</option>
-          <option value="09:00 AM">02:00 AM</option>
-          <option value="09:00 AM">03:00 AM</option>
-          <option value="09:00 AM">04:00 AM</option>
-          <option value="09:00 AM">05:00 AM</option>
-          <option value="09:00 AM">06:00 AM</option>
-          <option value="09:00 AM">07:00 AM</option>
-          <option value="09:00 AM">08:00 AM</option>
-          <option value="09:00 AM">09:00 AM</option>
-          <option value="10:00 AM">10:00 AM</option>
-          <option value="11:00 AM">11:00 AM</option>
-          <option value="12:00 PM">12:00 PM</option>
-          <option value="01:00 PM">01:00 PM</option>
-          <option value="02:00 PM">02:00 PM</option>
-          <option value="03:00 PM">03:00 PM</option>
-          <option value="03:00 PM">04:00 PM</option>
-          <option value="03:00 PM">05:00 PM</option>
-          <option value="03:00 PM">06:00 PM</option>
-          <option value="03:00 PM">07:00 PM</option>
-          <option value="03:00 PM">08:00 PM</option>
-          <option value="03:00 PM">09:00 PM</option>
-          <option value="03:00 PM">10:00 PM</option>
-          <option value="03:00 PM">11:00 PM</option>
-          <option value="03:00 PM">12:00 AM</option>
-      </select>
-  </div>
-        <div class="form-group">
-            <label for="date">Select Date:</label>
-            <input type="date" id="date" required>
+          <!-- Service Selection -->
+          <div class="form-group">
+              <label for="service">Select Service:</label>
+              <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Consultation">Consultation</option>
+                  <option value="Service A">Service A</option>
+                  <option value="Service B">Service B</option>
+              </select>
+          </div>
+  
+          <!-- Time Selection -->
+          <div class="form-group">
+              <label for="time">Select Time:</label>
+              <select id="time" name="time" required>
+                  <option value="" disabled selected>Select a time</option>
+                  <option value="01:00 AM">01:00 AM</option>
+                  <option value="02:00 AM">02:00 AM</option>
+                  <option value="03:00 AM">03:00 AM</option>
+                  <option value="04:00 AM">04:00 AM</option>
+                  <option value="05:00 AM">05:00 AM</option>
+                  <option value="06:00 AM">06:00 AM</option>
+                  <option value="07:00 AM">07:00 AM</option>
+                  <option value="08:00 AM">08:00 AM</option>
+                  <option value="09:00 AM">09:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="01:00 PM">01:00 PM</option>
+                  <option value="02:00 PM">02:00 PM</option>
+                  <option value="03:00 PM">03:00 PM</option>
+                  <option value="04:00 PM">04:00 PM</option>
+                  <option value="05:00 PM">05:00 PM</option>
+                  <option value="06:00 PM">06:00 PM</option>
+                  <option value="07:00 PM">07:00 PM</option>
+                  <option value="08:00 PM">08:00 PM</option>
+                  <option value="09:00 PM">09:00 PM</option>
+                  <option value="10:00 PM">10:00 PM</option>
+                  <option value="11:00 PM">11:00 PM</option>
+                  <option value="12:00 AM">12:00 AM</option>
+              </select>
+          </div>
+  
+          <!-- Date Selection -->
+          <div class="form-group">
+              <label for="date">Select Date:</label>
+              <input type="date" id="date" name="date" required>
+          </div>
+  
+          <!-- Full Name -->
+          <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+          </div>
         </div>
-        <div class="form-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required placeholder="Your Name">
-        </div>
-      </div>
-      <div class="container">
-        <div class="form-group">
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" required placeholder="Your Email">
-        </div>
-
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" required placeholder="Your Phone Number">
-        </div>
-
-        <div class="form-group">
-            <label for="message">Message/Notes (Optional):</label>
-            <textarea id="message" placeholder="Any special requests or notes"></textarea>
-        </div>
-
-        <button type="submit">Book Now</button>
-  </div>
-</form>
+        
+          <!-- Email Address -->
+         <div class="container">
+          <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+          </div>
+  
+          <!-- Phone Number -->
+          <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+          </div>
+  
+          <!-- Message/Notes -->
+          <div class="form-group">
+              <label for="message">Message/Notes (Optional):</label>
+              <textarea id="message" name="message" placeholder="Any special requests or notes"></textarea>
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit">Book now</button>
+        
+      </form>
+    </div>
 </div>
 </div>
 </section>
